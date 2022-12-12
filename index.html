@@ -1,14 +1,50 @@
-<head>
+<head><!-- default meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="William Wright Code Challenge">
+    <meta name="author" content="William Wright">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <section class="mobile-menu">
+            <div class="mobile-container">
+              <nav>
+                <ul class="headermenu">
+                  <li>
+                    <a>Menu</a>
+                  </li>
+                  <li>
+                    <a>Presenter Guidelines</a>
+                  </li>
+                  <li>
+                    <a>Wagner Award</a>
+                  </li>
+                  <li>
+                    <a>Exhibitors</a>
+                  </li>
+                  <li>
+                    <a>Schedule</a>
+                  </li>
+                  <li>
+                    <a>Get In Touch</a>
+                  </li>
+                  <li>
+                    <a>Photos</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="#" class="btn">Register Today</a>
+            </div>
+        </section>
+
     <section class="hero-section">
             <header>
                 <nav>
-                    <a href="index.html"><img src="Images/dla-logo-white.png" class="logo-white"></a>
+                    <a href="#"><img src="Images/dla-logo-white.png" class="logo-white"></a>
                     <ul>
                         <li>Venue</li>
                         <li>Presenter Guidelines</li>
@@ -18,7 +54,7 @@
                         <li>Get in Touch</li>
                         <li>Photos</li>
                         </ul>
-                        <button>Register Today</button>
+                        <button class="menu-toggle">Register Today</button>
                 </nav>
             </header>
 
@@ -79,57 +115,68 @@
     <section class="second-section">
         <div class="second-content">
             <img src="Images/IMG_8769.jpg" alt="speaker2">
-            <h1>Conference Topics Include</h1>
-            <ul>
-                <li>Managing growth in distance education</li>
-                <li>Training & support for distance instructors</li>
-                <li>Support for distance students</li>
-                <li>Budget and cost-benefit of distance education</li>
-                <li>Marketing distance courses and programs</li>
-            </ul>
-            <ul>
-            <li>Distance learning ethics and copyright</li>
-            <li>Organizational issues in distance education</li>
-            <li>Evaluation of distance courses and programs</li>
-            <li>Striving for Excellence During a Pandemic</li>
-            </ul>
+            <div class="second-wrapper">
+                <h1>Conference <span class="secondary-text">Topics </span>Include</h1>
+                <div class="list-data">
+                    <ul>
+                        <li>Managing growth in distance education</li>
+                        <li>Training & support for distance instructors</li>
+                        <li>Support for distance students</li>
+                        <li>Budget and cost-benefit of distance education</li>
+                        <li>Marketing distance courses and programs</li>
+                    </ul>
+                    <ul>
+                    <li>Distance learning ethics and copyright</li>
+                    <li>Organizational issues in distance education</li>
+                    <li>Evaluation of distance courses and programs</li>
+                    <li>Striving for Excellence During a Pandemic</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </section>
 
 
 
-    <section class="third-section">
-        <div class="footer-section">
-            <img src="/Images/dla-logo-long.png" alt="bottom logo">
-            <div class="fContent1">
-                <h1>
-                    UWG Distance & Distributed Education Center / UWG Online
-                </h1>
-                <p>
-                    1601 Maple Street,<br> Carrollton, Georgia 30118
-                </p>
+    <footer>
+        <div class="container">
+          <div class="footer-top">
+            <a href="/" class="footer-logo">
+              <img src="/Images/dla-logo-long.png" alt="company logo" />
+            </a>
+            <div class="footer-text">
+              <h5>UWG Distance & Distributed Education Center / UWG Online</h5>
+              <p>1601 Maple Street, Carrollton,<br/><br/>Georgia 30118</p>
             </div>
-            <div class="fContent2">
-                <h1>
-                    Past Conferences
-                </h1>
-                <p>
-                    2022<br> 2021<br> 2020<br> 2019<br> View All 
-                </p>
-            </div>
-            <div class="fContent3">
-                <h1>
-                    Sitemap  
-                </h1>
-                <p>
-                    Venue<br> Presenter Guidelines<br> Wagner Award<br> Exhibitors<br> Schedule<br> Get in Touch
-                </p>
-            </div>
-        </div>  
-        <footer>This site is a collaborative effort between USG eCampus and the University of West Georgia. All Rights Reserved.</footer>
-    </section>
-        
-        <script src="main.js" async defer></script>
+            <ul class="first-footer">
+              <p class="list-title">Past Conferences</p>
+              <li>2022</li>
+              <li>2021</li>
+              <li>2020</li>
+              <li>2019</li>
+              <li>View All</li>
+            </ul>
+            <ul class="second-footer">
+              <p class="list-title">Sitemap</p>
+              <li>Venue</li>
+              <li>Presenter Guidelines</li>
+              <li>Wagner Award</li>
+              <li>Exhibitors</li>
+              <li>Schedule</li>
+              <li>Get In Touch</li>
+            </ul>
+    
+          </div>
+          <div class="footer-bottom">
+            <p>This site is a collaborative effort between USG eCampus and the University of West Georgia. All Rights Reserved.</p>
+          </div>
+    
+        </div>
+       </footer>
+    
+
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
